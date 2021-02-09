@@ -1,0 +1,122 @@
+.wrapper {
+    padding: 0 10vw;
+    box-sizing: border-box;
+
+}
+
+.view{
+    width:100%;
+    min-height: 92vh
+}
+/*layouting*/
+.d-flex {
+    display: flex;
+}
+.flex-column{
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-align-center {
+    display: flex;
+    align-items: center;
+}
+.flex-centered{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.flex-between {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+
+}
+.flex-between wrapper{
+    display:block;
+    text-decoration:none;
+    color:white;
+}
+
+/*end of layouting*/
+
+
+/*components*/
+.card{
+    padding:16px;
+    animation:slidein .5s;
+    box-sizing: border-box;
+    border:1px solid rgba(0,0,0,0.2);
+    border-radius: 3px;
+    box-shadow:1px 1px 8px rgba(0,0,0,0.12);
+}
+
+
+.btn{
+    padding:10px 15px;
+
+    box-sizing: border-box;
+    border:none;
+    margin:10px 0;
+    border-radius: 3px
+
+}
+.primary-btn{
+    background:var(--primary-color);
+    color:white;
+    text-shadow:1px 1px 4px rgba(0,0,0,0.2);
+}
+
+.primary-btn-outline{
+    border:1px solid var(--primary-color);
+    color:var(--primary-color);
+    background:transparent;
+}
+
+.text-input{
+    padding:10px 15px;
+    border:1px solid rgba(0,0,0,0.2);
+    border-radius: 3px;
+    margin:10px 0;
+}
+
+.button-area button{
+    margin:0 3px;
+}
+/*end of components*/
+.logo {
+    font-weight: bolder;
+    font-size: 1.2rem;
+    color: white;
+}
+
+
+#topnav {
+    height: 8vh;
+    width: 100%;
+    color: white;
+    background: linear-gradient(45deg, #F44336, #FF5722);
+    box-shadow: 1px 0 8px rgba(0,0,0,0.12);
+}
+
+#topnav .nav-items {
+    width: 30%;
+}
+
+.primary-button {
+
+}
+
+
+@keyframes slidein{
+    from{
+        opacity: 0;
+        transform: translateY(-100%);
+    }to{
+        opacity: 1;
+        transform: translateY(0%);
+    }
+}

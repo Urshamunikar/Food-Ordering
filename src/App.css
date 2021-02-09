@@ -1,0 +1,54 @@
+/* Navbar */
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    min-height: 70px;
+    padding: 5px;
+}
+.logo a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: black;
+    margin-left: 2rem;
+}
+.nav .nav-cart{
+    cursor: pointer;
+    position: relative;
+    margin:1rem 2rem 0 0;
+}
+.nav .nav-cart span{
+    position: absolute;
+    top:-12px;
+    right: -7px;
+    background: crimson;
+    font-size: 10px;
+    color: white;
+    padding: 3px 5px;
+    border-radius: 50%;
+    z-index: -1;
+}
+
+
+
+/* Banner */
+.banner{
+    margin:10px 0;
+    height:400px;
+    width: 100%;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 1px 1px 8px rgba(0,0,0,0.18);
+
+}
+.banner img{
+    height: 400px;
+}
+@media only screen and (max-width: 600px){
+    .banner img{
+        height: 200px;
+    }
+    .banner{
+        height: 200px;
+    }
+}
